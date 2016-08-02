@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11173.2" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11143.2"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Messages View Controller-->
+        <scene sceneID="7MM-of-jgj">
+            <objects>
+                <viewController id="ObA-dk-sSI" customClass="MessagesViewController" customModule="MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qkL-Od-lgU"/>
+                        <viewControllerLayoutGuide type="bottom" id="n38-gi-rB5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6x-hZ-RRH">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="00h-ph-5pp"/>
+                                    <constraint firstAttribute="width" constant="80" id="gpq-uE-S1U"/>
+                                </constraints>
+                                <state key="normal" image="paper.png"/>
+                                <connections>
+                                    <action selector="iba_choseWeaponWithSender:" destination="ObA-dk-sSI" eventType="touchUpInside" id="6MO-a3-ISg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YwP-0k-r4C">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="RJj-dz-3kt"/>
+                                    <constraint firstAttribute="height" constant="80" id="wNU-kM-7GB"/>
+                                </constraints>
+                                <state key="normal" image="rock.png"/>
+                                <connections>
+                                    <action selector="iba_choseWeaponWithSender:" destination="ObA-dk-sSI" eventType="touchUpInside" id="LmZ-cz-XvT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Djd-nl-T5C">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="568-pQ-2mU"/>
+                                    <constraint firstAttribute="width" constant="80" id="O3U-zB-r5d"/>
+                                </constraints>
+                                <state key="normal" image="scissors.png"/>
+                                <connections>
+                                    <action selector="iba_choseWeaponWithSender:" destination="ObA-dk-sSI" eventType="touchUpInside" id="Dxe-gG-N7M"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your Weapon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8LX-cp-FzX">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="f9e-hl-Syk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Choose your Weapon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zcT-CM-pwn">
+                                <frame key="frameInset" minX="18" minY="312" width="286" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Rjt-rM-GQm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.46666666670000001" green="0.0" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YwP-0k-r4C" firstAttribute="centerY" secondItem="zMn-AG-sqS" secondAttribute="centerY" id="4Cb-9e-Ath"/>
+                            <constraint firstItem="Djd-nl-T5C" firstAttribute="top" secondItem="8LX-cp-FzX" secondAttribute="bottom" constant="20" id="ALu-7D-am2"/>
+                            <constraint firstItem="u6x-hZ-RRH" firstAttribute="centerX" secondItem="zMn-AG-sqS" secondAttribute="centerX" id="FWs-QE-JE0"/>
+                            <constraint firstItem="u6x-hZ-RRH" firstAttribute="leading" secondItem="YwP-0k-r4C" secondAttribute="trailing" constant="10" id="KfG-oL-zSL"/>
+                            <constraint firstItem="zcT-CM-pwn" firstAttribute="top" secondItem="Djd-nl-T5C" secondAttribute="bottom" constant="8" id="LIX-1x-6u7"/>
+                            <constraint firstItem="zcT-CM-pwn" firstAttribute="trailing" secondItem="zMn-AG-sqS" secondAttribute="trailingMargin" id="OM3-id-I3n"/>
+                            <constraint firstItem="zcT-CM-pwn" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leadingMargin" id="P5p-ml-ud2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8LX-cp-FzX" secondAttribute="trailing" constant="1" id="ZLk-Za-JgG"/>
+                            <constraint firstItem="Djd-nl-T5C" firstAttribute="leading" secondItem="u6x-hZ-RRH" secondAttribute="trailing" constant="10" id="aKW-Rs-hhe"/>
+                            <constraint firstItem="u6x-hZ-RRH" firstAttribute="centerY" secondItem="zMn-AG-sqS" secondAttribute="centerY" id="fbz-DZ-SGu"/>
+                            <constraint firstItem="8LX-cp-FzX" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leadingMargin" constant="1" id="kBp-hZ-i9o"/>
+                            <constraint firstItem="Djd-nl-T5C" firstAttribute="centerY" secondItem="zMn-AG-sqS" secondAttribute="centerY" id="qaY-7Y-rxe"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="528"/>
+                    <connections>
+                        <outlet property="ibo_myscore" destination="zcT-CM-pwn" id="MJb-TB-hA8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.59999999999999" y="136.73163418290855"/>
+        </scene>
+        <!--Battle View Controller-->
+        <scene sceneID="Loz-3Z-p1i">
+            <objects>
+                <viewController storyboardIdentifier="sb_BattleViewController" id="nQ3-5j-UIl" customClass="BattleViewController" customModule="MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UB1-v2-y61"/>
+                        <viewControllerLayoutGuide type="bottom" id="gT1-Ko-Ro0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ui3-XA-oTw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Bn-jP-dVj">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="0Tb-eK-tot"/>
+                                    <constraint firstAttribute="height" constant="80" id="GYQ-iV-qYh"/>
+                                </constraints>
+                                <state key="normal" image="paper.png"/>
+                                <connections>
+                                    <action selector="iba_choseWeaponWithSender:" destination="nQ3-5j-UIl" eventType="touchUpInside" id="M6x-uB-zek"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UEf-Hc-bA4">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="8mx-Hh-jzc"/>
+                                    <constraint firstAttribute="height" constant="80" id="jx8-Gu-keF"/>
+                                </constraints>
+                                <state key="normal" image="rock.png"/>
+                                <connections>
+                                    <action selector="iba_choseWeaponWithSender:" destination="nQ3-5j-UIl" eventType="touchUpInside" id="XYN-gU-h6q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0F2-Gh-Rcs">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="lFC-pX-1U2"/>
+                                    <constraint firstAttribute="height" constant="80" id="mUd-dM-pZ3"/>
+                                </constraints>
+                                <state key="normal" image="scissors.png"/>
+                                <connections>
+                                    <action selector="iba_choseWeaponWithSender:" destination="nQ3-5j-UIl" eventType="touchUpInside" id="8zg-Kd-2Fe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your Weapon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ivq-Di-7QC">
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="LTL-bM-sts"/>
+                                    <constraint firstAttribute="height" constant="20" id="csp-9N-qUT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bzI-1b-ztA">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="qaj-W7-JjF"/>
+                                    <constraint firstAttribute="width" constant="160" id="ygL-iK-NVk"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3Bn-jP-dVj" firstAttribute="centerX" secondItem="ui3-XA-oTw" secondAttribute="centerX" id="2Jp-9S-yh3"/>
+                            <constraint firstItem="UEf-Hc-bA4" firstAttribute="top" secondItem="Ivq-Di-7QC" secondAttribute="bottom" constant="20" id="7VA-rz-PtI"/>
+                            <constraint firstItem="0F2-Gh-Rcs" firstAttribute="leading" secondItem="3Bn-jP-dVj" secondAttribute="trailing" constant="10" id="8XI-TK-bhW"/>
+                            <constraint firstItem="Ivq-Di-7QC" firstAttribute="leading" secondItem="ui3-XA-oTw" secondAttribute="leadingMargin" id="Az3-In-HtF"/>
+                            <constraint firstItem="Ivq-Di-7QC" firstAttribute="centerY" secondItem="ui3-XA-oTw" secondAttribute="centerY" id="LHr-ck-S2J"/>
+                            <constraint firstItem="3Bn-jP-dVj" firstAttribute="leading" secondItem="UEf-Hc-bA4" secondAttribute="trailing" constant="10" id="NAu-yS-uP4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ivq-Di-7QC" secondAttribute="trailing" id="NJa-Om-lRg"/>
+                            <constraint firstItem="0F2-Gh-Rcs" firstAttribute="top" secondItem="Ivq-Di-7QC" secondAttribute="bottom" constant="20" id="Vsu-kq-7s3"/>
+                            <constraint firstItem="bzI-1b-ztA" firstAttribute="centerX" secondItem="ui3-XA-oTw" secondAttribute="centerX" id="YcO-2e-2dk"/>
+                            <constraint firstItem="Ivq-Di-7QC" firstAttribute="centerX" secondItem="ui3-XA-oTw" secondAttribute="centerX" id="YtW-Of-zWt"/>
+                            <constraint firstItem="3Bn-jP-dVj" firstAttribute="top" secondItem="Ivq-Di-7QC" secondAttribute="bottom" constant="20" id="cvG-Hy-DAi"/>
+                            <constraint firstItem="Ivq-Di-7QC" firstAttribute="top" secondItem="bzI-1b-ztA" secondAttribute="bottom" constant="10" id="e6p-t5-Lql"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ibo_slotView" destination="bzI-1b-ztA" id="bjx-0D-xgJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qMn-2v-YDo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748" y="199"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="paper.png" width="160" height="160"/>
+        <image name="rock.png" width="160" height="160"/>
+        <image name="scissors.png" width="160" height="160"/>
+    </resources>
+</document>
